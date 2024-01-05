@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(#f4cbd7, #a4ebd7, #a4b8eb, #f4cbd7);
+  }
+  header {
+    text-align: center;
+    color: black;
+    padding: 3rem 10px;
+  }
+  header h1 {
+    font-size: 4rem;
+    line-height: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 5px #a4ebd7;
+    background: transparent;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(79, 47, 0, 0.934);
+  }
+  /* main {
+    background-color: #f4cbd7;
+  } */
+  nav {
+    background-color: #a4b8eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 900px;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    text-align: center;
+
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(244, 7, 55, 0.486);
+  }
+  nav ul li:hover {
+    background-color: #88a5f0ad;
+  }
+  nav ul li:hover a {
+    color: rgba(244, 7, 55, 0.886);
+  }
+
+  main section {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .courses,
+  .reviews {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courses video,
+  .reviews iframe {
+    margin: 1rem;
+    min-width: 350px;
+    border: solid rgba(220, 20, 60, 0.703) 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.388);
+    transition: all .3s ease;
+  }
+  .courses video:hover,
+  .reviews iframe:hover{
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.788) ;
+  }
+
+  iframe {
+    aspect-ratio: 16/9;
+  }
+
+  footer {
+    border-top: rgba(237, 10, 10, 0.651) 2px solid;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  footer a {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    color: rgba(32, 8, 138, 0.794);
+    font-weight: 700;
+  }
+  footer a:hover {
+    opacity: 0.9;
+    color: rgba(32, 8, 138, 0.919);
+  }
+
+  .about {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .about img {
+    width: 60%;
+    margin: 25px 0 0 0;
+  }
+
+  .about p {
+    opacity: 0.9;
+    color: rgba(101, 3, 101, 0.904);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .social-links {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .social-links span {
+    padding: 0.5rem 0.2rem;
+  }
+  #author {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #191a1cd0;
+  }
+  #author:hover{
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.473);
+  }
+  .profile_name{
+    font-family:cursive;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.737);
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 900px) {
+    header {
+      height: fit-content;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      line-height: 2rem;
+    }
+    nav ul {
+      overflow: hidden;
+      height: 0.3rem;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      padding-left: 2rem;
+      text-align: start;
+    }
+    .about p {
+      display: none;
+    }
+    h2 {
+      font-size: 1.6rem;
+    }
+    .social-links {
+      font-size: 1.1rem;
+    }
+  }
